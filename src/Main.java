@@ -90,12 +90,12 @@ public class Main {
                                 System.out.println("Enter number of Stripes: ");
                                 tigerObject.setNumberOfStripes(keyboard.nextInt());
                                 System.out.println("Enter Sound Level of Roar: ");
-                                tigerObject.setSoundLevelOfRoar(keyboard.nextInt());
+                                tigerObject.setSoundLevel(keyboard.nextInt());
                                 break;
                             case 2:
                                 System.out.println("Tiger speed: "+tigerObject.getSpeed()+" mph");
                                 System.out.println("The Tiger has " + tigerObject.getNumberOfStripes() + " stripes");
-                                System.out.println("The Tiger Roar can reach "+tigerObject.getSoundLevelOfRoar()+ "dB");
+                                System.out.println("The Tiger Roar can reach "+tigerObject.getSoundLevel()+ "dB");
                                 break;
                             case 3:
                                 tigerObject.walking();
@@ -122,11 +122,11 @@ public class Main {
                                 System.out.println("Enter Dolphin speed: ");
                                 dolphinObject.setSwimmingSpeed(keyboard.nextDouble());
                                 System.out.println("Enter Dolphin color: ");
-                                dolphinObject.setDolphinColor(keyboard.next());
+                                dolphinObject.setColor(keyboard.next());
                                 break;
                             case 2:
                                 System.out.println("Dolphin speed: "+dolphinObject.getSwimmingSpeed()+ " nautical miles");
-                                System.out.println("The Dolphin color is "+dolphinObject.getDolphinColor());
+                                System.out.println("The Dolphin color is "+dolphinObject.getColor());
                                 break;
                             case 3:
                                 dolphinObject.swimming();
@@ -150,19 +150,19 @@ public class Main {
                         switch (menuChoice) {
                             case 1:
                                 System.out.println("Enter if the Penguin is swimming: ");
-                                penguinObject.setIsSwimming(keyboard.nextBoolean());
+                                penguinObject.setSwimming(keyboard.nextBoolean());
                                 System.out.println("Enter Penguin walk speed: ");
                                 penguinObject.setWalkSpeed(keyboard.nextInt());
                                 System.out.println("Enter Penguin swim speed: ");
                                 penguinObject.setSwimSpeed(keyboard.nextInt());
                                 break;
                             case 2:
-                                System.out.println("The Penguin is swimming: " + penguinObject.getIsSwimming());
+                                System.out.println("The Penguin is swimming: " + penguinObject.isSwimming());
                                 System.out.println("The Penguin walking speed is "+ penguinObject.getWalkSpeed()+ " mph");
                                 System.out.println("The Penguin swim speed is "+penguinObject.getSwimSpeed()+ " nautical miles");
                                 break;
                             case 3:
-                                if (penguinObject.getIsSwimming()){
+                                if (penguinObject.isSwimming()){
                                     penguinObject.swimming();
                                 } else {
                                     penguinObject.walking();

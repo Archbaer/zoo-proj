@@ -1,13 +1,13 @@
 public class Dolphin extends Animal implements Swim{
-    private String dolphinColor;
+    private String color;
     private double swimmingSpeed;
 
-    public String getDolphinColor() {
-        return dolphinColor;
+    public String getColor() {
+        return color;
     }
 
-    public void setDolphinColor(String color) {
-        this.dolphinColor = color;
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public double getSwimmingSpeed(){
@@ -23,16 +23,16 @@ public class Dolphin extends Animal implements Swim{
     }
 
     public void swimming() {
-        System.out.println("Dolphin: I am swimming at the speed of " + swimmingSpeed + " nautical miles per hour");
+        System.out.println("Dolphin: I am swimming at the speed " + (int)swimmingSpeed);
     }
 
     @Override
     public void eatingFood(){
-        System.out.println("Dolphin: I am eating delicious fish");
+        System.out.println("Dolphin: I am eating delicious fish.");
     }
 
     @Override
     public void eatingCompleted() {
-        System.out.println("I have eaten fish");
+        System.out.println("Dolphin: I have eaten fish.");
     }
 }

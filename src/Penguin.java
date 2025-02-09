@@ -3,11 +3,11 @@ public class Penguin extends Animal implements Walk, Swim{
     private int walkSpeed;
     private int swimSpeed;
 
-    public boolean getIsSwimming() {
+    public boolean isSwimming() {
         return isSwimming;
     }
 
-    public void setIsSwimming(boolean swim) {
+    public void setSwimming(boolean swim) {
         this.isSwimming = swim;
     }
 
@@ -32,20 +32,20 @@ public class Penguin extends Animal implements Walk, Swim{
     }
 
     public void swimming() {
-        System.out.println("Penguin: I am swimming at the speed of " + swimSpeed + " nautical miles per hour");
+        System.out.println("Penguin: I am swimming at the speed " + swimSpeed + " nautical miles per hour");
     }
 
     public void walking() {
-        System.out.println("Penguin: I am walking at the speed of " + walkSpeed + " mph");
+        System.out.println("Penguin: I am walking at the speed " + walkSpeed + " mph");
     }
 
     @Override
     public void eatingFood(){
-        System.out.println("Penguin: I am eating delicious fish");
+        System.out.println("Penguin: I am eating delicious fish.");
     }
 
     @Override
     public void eatingCompleted() {
-        System.out.println("Penguin: I have eaten fish");
+        System.out.println("Penguin: I have eaten fish.");
     }
 }
